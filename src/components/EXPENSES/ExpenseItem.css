@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+.expence-item-div2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.expence-item-container {
+  font-family: "Monoton", cursive;
+  font-family: "Orbitron", sans-serif;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  /* background-color: rgb(7, 0, 0);
+  background-color: #000000; */
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  /* border-radius: 5px; */
+  border: none;
+}
+.expence-item-date {
+  color: #fff;
+}
+.expence-item-price {
+  color: #fff;
+  font-weight: 700;
+  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+.expence-item-description {
+  font-family: "Poppins";
+  letter-spacing: 1px;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 700;
+  /* flex-shrink: 1; */
+}
+@media screen and (max-width: 480px) {
+  .expence-item-container {
+    flex-direction: column;
+  }
+}

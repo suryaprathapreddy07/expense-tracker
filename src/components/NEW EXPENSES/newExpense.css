@@ -1,0 +1,22 @@
+.initial-expense-button-div {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 1rem 1rem;
+  /* background: linear-gradient(90deg, #ccf4ff 0%, #73e1f5 100%); */
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+}
+.initial-expense-button {
+  padding: 1rem;
+  border: none;
+  border-radius: 13px;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  font-weight: 700;
+  color: #000;
+  margin-right: 1rem;
+}
+.initial-expense-button:hover {
+  background: linear-gradient(90deg, #000851 0%, #1cb5e0 100%);
+  color: #fff;
+}

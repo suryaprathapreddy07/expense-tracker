@@ -1,0 +1,66 @@
+.expense-form {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 1rem 1rem;
+  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+  border-radius: 13px;
+}
+.expense-form form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.expense-form-controls {
+  /* border: 1px solid black; */
+  display: flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+  /* width: 60%; */
+}
+.expense-form-actions {
+  /* border: 1px solid black; */
+}
+.expense-form-control {
+  /* border: 1px solid black; */
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  width: 40%;
+  /* justify-content: center;
+  align-items: center; */
+}
+.expense-form-control input {
+  border: none;
+  outline: none;
+  padding: 0.3rem;
+  border-radius: 5px;
+  min-width: 7rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.expense-form-action {
+  display: flex;
+  justify-content: flex-end;
+}
+.expense-form-control label {
+  color: #fff;
+  font-weight: 600;
+}
+.expense-form-action button {
+  padding: 1rem;
+  border: none;
+  border-radius: 13px;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  font-weight: 700;
+  color: #000851;
+  margin-right: 1rem;
+  transition: background 1s;
+  /* border: 1px solid #fff; */
+}
+.expense-form-action button:hover {
+  background: linear-gradient(90deg, #000851 0%, #1cb5e0 100%);
+  color: #fff;
+}
