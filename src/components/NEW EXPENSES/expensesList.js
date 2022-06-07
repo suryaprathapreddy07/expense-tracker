@@ -13,7 +13,7 @@ const ExpenseList = function (props) {
       <ExpenseItem
         key={expense.id}
         title={expense.expenseItem}
-        date={expense.expenseDate}
+        date={new Date(expense.expenseDate)}
         price={expense.expensePrice}
       ></ExpenseItem>
     ));

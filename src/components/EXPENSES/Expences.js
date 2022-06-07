@@ -16,14 +16,17 @@ function Expences(props) {
   const filteredExpenses = props.expenses.filter(
     (ele) => ele.expenseDate.getFullYear() == dropdownData
   );
-
-  // console.log(filteredExpense);
+  localStorage.setItem("filteredExpenses", JSON.stringify(filteredExpenses));
+  const localExpenses = localStorage.getItem("filteredExpenses");
+  const data = JSON.parse(localExpenses);
+  console.log(filteredExpenses);
+  console.log(data);
   return (
     <div>
       <Card className="expenses-container">
-        <ExpenseChart expenses={filteredExpenses}></ExpenseChart>
+        <ExpenseChart expenses={data}></ExpenseChart>
         <ExpensesFilter onDateChange={dropdownDataHandler}></ExpensesFilter>
-        <ExpenseList filteredExpenses={filteredExpenses}></ExpenseList>
+        <ExpenseList filteredExpenses={data}></ExpenseList>
       </Card>
     </div>
   );
